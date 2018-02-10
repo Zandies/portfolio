@@ -3,27 +3,23 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="parallax.css" />
-    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link rel="icon" href="favicon.ico" />
     <title>Test Parallax</title>
   </head>
   <body>
 
   <header>
-    <ul class="nav">
-      <li><a href="#">Accueil</a></li>
-      <li><a href="#">Jeu de Rôle</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropbtn">Code</a>
-        <div class="dropdown-content">
-          <a href="#">HTML/CSS</a>
-          <a href="#">Javascript/JQuery/PHP</a>
-          <a href="#">Linux</a>
-        </div>
-      </li>
-      <li><a href="#">Contact</a></li>
+    <a href="#">Accueil</a>
+    <a href="#">Jeux de Rôle</a>
+    <a href="#">Code</a>
+    <ul class="dropdown">
+      <li>HTML/CSS</li>
+      <li>Javascript/JQuery/PHP</li>
+      <li>Linux</li>
     </ul>
-    <!-- <i class="fas fa-sign-out-alt"></i> -->
+    <a href="#">Contact</a>
+    <i class="fas fa-sign-out-alt"></i>
   </header>
   <div class="bgimg-1">
       <div id="caption"><p>Hello World !</p></div>
