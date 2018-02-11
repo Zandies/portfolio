@@ -8,11 +8,11 @@ html{
 }
 
 body{
-      font-family: "Lato";
-      height: 100%;
-      margin: 0;
-      color: #777;
-    }
+  font-family: "Lato";
+  height: 100%;
+  margin: 0;
+  color: #777;
+}
 
 header{
   position: relative;
@@ -77,23 +77,23 @@ li a, .dropbtn{
 }
 
 li:first-child:hover a{
-  border-top: 5px solid #e74c3c;
-  margin-top: -5px;
+  border-top: 2px solid #e74c3c;
+  margin-top: -2px;
 }
 
 li:nth-child(2):hover a{
-  border-top: 5px solid #e67e22;
-  margin-top: -5px;
+  border-top: 2px solid #e67e22;
+  margin-top: -2px;
 }
 
 a.dropbtn:hover{
-  border-top: 5px solid #f1c40f;
-  margin-top: -5px;
+  border-top: 2px solid #f1c40f;
+  margin-top: -2px;
 }
 
 li:last-child:hover a{
-  border-top: 5px solid #8e44ad;
-  margin-top: -5px;
+  border-top: 2px solid #8e44ad;
+  margin-top: -2px;
 }
 
 .bgimg-1 {
