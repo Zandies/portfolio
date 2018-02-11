@@ -158,18 +158,17 @@ li:last-child:hover a{
 }
 
 #box2{
-  padding: 50px 80px;
+  display: flex;
+  padding: 50px 0;
   background-color: #7f8c8d;
+  width: 100%;
+  justify-content: space-around;
 }
 
 button{
-  display: table-cell;
   position: relative;
-  float: left;
-  padding:20px;
-  margin: auto;
-  margin-top: -35px;
-  margin-left: 9%;
+  margin: 30px;
+  padding: 20px 40px;
   cursor:pointer;
   color: #fff;
   font-size:20px;
@@ -178,11 +177,15 @@ button{
   overflow: hidden;
 }
 
-button:hover #btn-layer{
+button:hover .btn-layer1{
   top: 0px;
 }
 
-#btn-layer{
+button:hover .btn-layer2{
+  bottom: 0px;
+}
+
+.btn-layer1{
   width: 100%;
   left: 0;
   padding: 20px 0;
@@ -190,6 +193,16 @@ button:hover #btn-layer{
   position: absolute;
   top: -90px;
   transition: top 0.5s ease;
+}
+
+.btn-layer2{
+  width: 100%;
+  left: 0;
+  padding: 20px 0;
+  background-color: var(--red);
+  position: absolute;
+  bottom: -90px;
+  transition: bottom 0.5s ease;
 }
 
 footer{
