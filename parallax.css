@@ -1,3 +1,22 @@
+:root{
+    --red: #ff5747;
+    --red-darker: #cb4539;
+
+    --pink: #fa55ca;
+
+    --blue-lighter: #40d7ff;
+    --blue-light: #00ccff;
+    --blue: #16bfff;
+    --blue-dark: #129acd;
+    --blue-darker: #1273cd;
+
+    --navy: #4f74a5;
+    --navy-darker: #223d56;
+
+    --green: #2bdc33;
+    --green-dark: #23b32a;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -78,21 +97,25 @@ li a, .dropbtn{
 
 li:first-child:hover a{
   border-top: 2px solid #e74c3c;
+  margin-bottom: -2px;
   margin-top: -2px;
 }
 
 li:nth-child(2):hover a{
   border-top: 2px solid #e67e22;
+  margin-bottom: -2px;
   margin-top: -2px;
 }
 
 a.dropbtn:hover{
   border-top: 2px solid #f1c40f;
+  margin-bottom: -2px;
   margin-top: -2px;
 }
 
 li:last-child:hover a{
   border-top: 2px solid #8e44ad;
+  margin-bottom: -2px;
   margin-top: -2px;
 }
 
@@ -119,6 +142,7 @@ li:last-child:hover a{
 #caption p{
   font-size: 50px;
   color: #fff;
+  cursor: default;
 }
     
 #box1{
@@ -127,13 +151,52 @@ li:last-child:hover a{
   background-color:white;
   text-align:center;
   padding: 50px 80px;
-  text-align: justify;
 }
 
+#box1 h2{
+  margin: -15px 0 15px 0;
+}
 
+#box2{
+  padding: 50px 80px;
+  background-color: #7f8c8d;
+}
 
-#perspective{
-  font-family: 'Lato';
+button{
+  display: table-cell;
+  position: relative;
+  float: left;
+  padding:20px;
+  margin: auto;
+  margin-top: -35px;
+  margin-left: 9%;
+  cursor:pointer;
   color: #fff;
-  font-size: 37px;
+  font-size:20px;
+  background-color:transparent;
+  border:2px solid #fff;
+  overflow: hidden;
+}
+
+button:hover #btn-layer{
+  top: 0px;
+}
+
+#btn-layer{
+  width: 100%;
+  left: 0;
+  padding: 20px 0;
+  background-color: var(--red);
+  position: absolute;
+  top: -90px;
+  transition: top 0.5s ease;
+}
+
+footer{
+  position:relative;
+  color:#ddd;
+  background-color:#282E34;
+  text-align:center;
+  padding:50px 80px;
+  text-align: justify;
 }

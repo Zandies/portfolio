@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="parallax.css" />
+    <link rel="stylesheet" href="animate.min.css">
+    <script src="../jquery.js"></script>
+    <script src="test.js"></script>
     <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
     <link rel="icon" href="favicon.ico" />
     <title>Test Parallax</title>
@@ -31,15 +34,40 @@
  
 
   <div id="box1">
-    <h3 style="text-align:center;">Test de Parallax</h3>
+    <h2>Test de Parallax</h2>
     <p>Test de l'effet parallax sur un site web. Tuto trouvé sur W3School. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero sunt, tempora aperiam. Tempora accusantium, alias blanditiis est repudiandae assumenda neque distinctio cupiditate, eius et iste inventore libero architecto consequatur provident!</p>
   </div>
 
-  <div style="position:relative;">
-    <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-      <p>Fait avec les moyens du bord, à l'arrache comme on l'aime, l'image est gratuite et libre de droits - Zandies &copy; - Ca ne sert à rien mais c'est toujours classe d'avoir ce logo ;) </p>
+  <div id="box2">
+    <div id="btn">
+      <button>
+        <div id="btn-layer">&diams;</div>
+        Hover
+      </button>
+    </div>
+    <div id="btn">
+      <button>
+        <div id="btn-layer">&spades;</div>
+        Hover
+      </button>
+    </div>
+    <div id="btn">
+      <button>
+        <div id="btn-layer">&clubs;</div>
+        Hover
+      </button>
+    </div>
+    <div id="btn">
+      <button>
+        <div id="btn-layer">  &hearts;</div>
+        Hover
+      </button>
     </div>
   </div>
 
+  <footer>
+      <p>Fait avec les moyens du bord, à l'arrache comme on l'aime, l'image est gratuite et libre de droits - Zandies &copy; - Ca ne sert à rien mais c'est toujours classe d'avoir ce logo ;) </p>
+  </footer>
+  
   </body>
 </html>
