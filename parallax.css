@@ -34,6 +34,7 @@ body{
 }
 
 header{
+  display: flex;
   position: relative;
   background-color: #282E34;
   color: #ddd;
@@ -159,15 +160,22 @@ li:last-child:hover a{
 
 #box2{
   display: flex;
+  flex-wrap: wrap;
   padding: 50px 0;
   background-color: #7f8c8d;
   width: 100%;
   justify-content: space-around;
 }
 
+#box2 h2{
+  color: #fff;
+  position: absolute;
+  margin: -15px 0 20px 0;
+}
+
 button{
   position: relative;
-  margin: 30px;
+  margin: 30px 0 10px 0;
   padding: 20px 40px;
   cursor:pointer;
   color: #fff;
@@ -199,7 +207,7 @@ button:hover .btn-layer2{
   width: 100%;
   left: 0;
   padding: 20px 0;
-  background-color: var(--red);
+  background-color: #2F2F2FFF;
   position: absolute;
   bottom: -90px;
   transition: bottom 0.5s ease;
