@@ -234,14 +234,12 @@ input{
   padding: 5px;
   border-style: none;
   border-bottom: 3px solid #2980b9;
-  width: 40%;
 }
 
 textarea{
   margin: -5px 0 10px 0;
   padding: 4px;
   height: 50px;
-  width: 40%;
   border-style: none;
   border-bottom: 3px solid #2980b9;
 }
@@ -261,15 +259,18 @@ input:focus, textarea:focus{
 }
 
 #cookie{
-  background-color: #e67e22;
-  cursor: default;
-}
-
-#ulysse{
   display: flex;
+  flex-direction: row;
+  cursor: default;
+  background-color: #ecf0f1;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  font-size: 100px;
+}
+
+.code{
+  padding: 15px;
+  width: 150px;
 }
 
 footer{
@@ -279,4 +280,14 @@ footer{
   text-align:center;
   padding:50px 80px;
   text-align: justify;
+}
+
+@media (max-width: 1500px) {
+  #box3 form{
+    width: 90%;
+  }
+
+  input, textarea {
+    width: 90%;
+  }
 }

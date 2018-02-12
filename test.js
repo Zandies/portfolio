@@ -23,5 +23,13 @@ $(function(){
 	// 	$cookie.html(' &#128165; ').removeClass('animated infinte bounce');
 	// });
 
+    // Lorsqu'on clique sur "Contact" -> Scroll Smooth vers l'ancre
+    $('#contact').on('click', function(e){
+	       e.preventDefault(); 
+		var target = $(this).attr('href');
+		$('html, body').animate({
+			scrollTop: $(target).offset().top
+		}, 1000 );
+	});
 
 });
