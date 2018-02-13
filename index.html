@@ -3,14 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <script src="jquery.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
     <script type="text/javascript">
-      $(function(){
-        if ($(document).load()) {
-
-        }else{
-          $('html, body').css({'display' : 'none'});
-        }
-      });</script>
+    $(window).load(function() {
+      $(".loader").fadeOut("1000");
+    })
+    </script>
     <link rel="stylesheet" type="text/css" href="parallax.css" />
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
     <link rel="stylesheet" href="animate.min.css">
@@ -19,7 +17,8 @@
     <title>Test Parallax</title>
   </head>
   <body>
-
+  <div class="loader">
+  </div>
   <header>
     <div class="burger" onclick="myFunction(this)">
         <div class="bar1"></div>
