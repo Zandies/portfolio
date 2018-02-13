@@ -2,6 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <script src="jquery.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        if ($(document).load()) {
+
+        }else{
+          $('html, body').css({'display' : 'none'});
+        }
+      });</script>
     <link rel="stylesheet" type="text/css" href="parallax.css" />
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
     <link rel="stylesheet" href="animate.min.css">
@@ -89,7 +98,6 @@
   <footer>
       <p>Fait avec les moyens du bord, à l'arrache comme on l'aime, l'image est gratuite et libre de droits - Zandies &copy; - Ca ne sert à rien mais c'est toujours classe d'avoir ce logo ;) </p>
   </footer>
-    <script src="jquery.js"></script>
     <script src="test.js"></script>
   </body>
 </html>
