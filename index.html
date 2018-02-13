@@ -12,6 +12,11 @@
   <body>
 
   <header>
+    <div class="burger" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
     <ul class="nav">
       <li><a href="#">Accueil</a></li>
       <li><a href="#">Jeu de Rôle</a></li>
@@ -28,7 +33,7 @@
     </ul>
   </header>
   <div class="bgimg-1">
-      <div id="caption"><p>Hello World !</p></div>
+      <div id="caption"><p>&#60;p&#62;Hello World !&#60;/p&#62;</p></div>
   </div>
  
 
@@ -66,14 +71,16 @@
   </div>
   
   <div id="box3">
-    <form method="post" action="">
+    <form>
       <h2>Contactez-moi</h2>
       <input type="mail" name="mail" placeholder="Email">
       <textarea></textarea>
-      <button id="send-mail">Envoyer</button>
+      <button id="send-mail" onclick="alert('Ca marche pas hein !')">Envoyer</button>
     </form>
   </div>
-  <div id="cookie"> 
+  
+  <div id="box4">
+    <h2>Code maîtrisés</h2>
     <img src="HTML_Logo.png" class="code" />
     <img src="CSS_Logo.png" alt="" class="code">
     <img src="JS_Logo.png" id="js" class="code">
