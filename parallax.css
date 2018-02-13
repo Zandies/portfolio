@@ -31,6 +31,11 @@ body{
   height: 100%;
   margin: 0;
   color: #777;
+  background-image: url("img2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header{
@@ -147,16 +152,16 @@ li:last-child:hover a{
   margin-top: -2px;
 }
 
-.bgimg-1 {
-      position: relative;
-      opacity: 1;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-image: url("img2.jpg");
-      min-height: 100%;
-    }
+.bg-parallax {
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("img2.jpg");
+  min-height: 100%;
+}
 
 #caption{
   position: absolute;
@@ -200,6 +205,11 @@ li:last-child:hover a{
   margin: -15px 0 20px 0;
 }
 
+.house{
+  height: 55px;
+  width: 50px;
+}
+
 button{
   position: relative;
   margin: 30px 0 10px 0;
@@ -212,37 +222,41 @@ button{
   overflow: hidden;
 }
 
-button:hover .btn-layer1{
-  top: 0px;
+button:hover .gryffondor-layer, 
+button:hover .slytherin-layer, 
+button:hover .hufflepuff-layer, 
+button:hover .ravenclaw-layer {
+  top: -17px;
 }
 
-button:hover .btn-layer2{
-  bottom: 0px;
-}
-
-.btn-layer1{
+.layer{
   width: 100%;
   left: 0;
   padding: 20px 0;
-  background-color: var(--red);
   position: absolute;
-  top: -90px;
+  top: -100px;
   transition: top 0.5s ease;
 }
 
-.btn-layer2{
-  width: 100%;
-  left: 0;
-  padding: 20px 0;
-  background-color: #2F2F2FFF;
-  position: absolute;
-  bottom: -90px;
-  transition: bottom 0.5s ease;
+.gryffondor-layer{
+  background-color: #6C2221;
+}
+
+.slytherin-layer{
+  background-color: #284727;
+}
+
+.hufflepuff-layer{
+  background-color: #F6C803;
+}
+
+.ravenclaw-layer{
+  background-color: #353C6D;
 }
 
 #box3{
   display: flex;
-  background-color: #34495e;
+  background-color: #242635;
   padding: 25px;
   justify-content: center;
 }
@@ -252,23 +266,30 @@ button:hover .btn-layer2{
   flex-direction: column;
   align-items: center;
   color: #fff;
-  background-color: rgba(53, 74, 94, .7);
-  width: 45%;
+  background-color: #242635;
+  width: 90%;
 }
 
 input{
   margin: 15px;
-  padding: 5px;
+  color: #fff;
+  padding: 15px;
   border-style: none;
-  border-bottom: 3px solid #2980b9;
+  border-bottom: 3px solid #84B9F6;
+  background-color: #343B50;
+  width: 30%;
 }
 
 textarea{
   margin: -5px 0 10px 0;
-  padding: 4px;
+  padding: 14px;
+  font-size: 15px;
   height: 50px;
+  width: 50%;
   border-style: none;
-  border-bottom: 3px solid #2980b9;
+  border-bottom: 3px solid #84B9F6;
+  background-color: #343B50;
+  color: #fff;
 }
 
 input:focus, textarea:focus{
@@ -319,15 +340,15 @@ footer{
 
 @media (max-width: 1500px) {
   #box3 form{
-    width: 90%;
+    /*width: 90%;*/
   }
 
   input, textarea {
-    width: 90%;
+    /*width: 90%;*/
   }
 }
 
-@media (max-width: 450px) {
+@media screen (max-width: 450px) {
   .burger{
     display: inline-block;
     top: 5px;
@@ -350,7 +371,7 @@ footer{
 
 .fixed{
   position: fixed;
-  top: 0;
+  top: 0px;
   z-index: 100;
   width: 100%;
 }
