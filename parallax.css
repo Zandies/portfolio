@@ -38,8 +38,8 @@ body{
   background-size: cover;
 }
 
-.loader{
-  background: url('images/ajax-loader.gif') 50% 50% no-repeat rgba(255, 255, 255, 0.8);
+#loader{
+  background: url('ajax-loader.gif') 50% 50% no-repeat rgba(255, 255, 255, 0.8);
   cursor: wait;
   height: 100%;
   left: 0;

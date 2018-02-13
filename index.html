@@ -5,9 +5,10 @@
     <script src="jquery.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
     <script type="text/javascript">
-    $(window).load(function() {
-      $(".loader").fadeOut("1000");
-    })
+    var loader = document.getElementById('loader');
+    window.addEventListener('load', function(){
+      document.getElementById('loader').style.display = 'none';
+    });
     </script>
     <link rel="stylesheet" type="text/css" href="parallax.css" />
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
@@ -17,7 +18,7 @@
     <title>Test Parallax</title>
   </head>
   <body>
-  <div class="loader">
+  <div id="loader">
   </div>
   <header>
     <div class="burger" onclick="myFunction(this)">
