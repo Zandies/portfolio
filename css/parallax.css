@@ -33,7 +33,7 @@ body{
   height: 100%;
   margin: 0;
   color: #777;
-  background-image: url("img2.jpg");
+  background-image: url("../img/img2.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -41,7 +41,7 @@ body{
 }
 
 #loader{
-  background: url('ajax-loader.gif') 50% 50% no-repeat rgba(255, 255, 255, 0.8);
+  background: url('../img/ajax-loader.gif') 50% 50% no-repeat rgba(255, 255, 255, 0.8);
   cursor: wait;
   height: 100%;
   left: 0;
@@ -128,12 +128,6 @@ nav{
   border-top: 2px solid #8e44ad;
   margin-bottom: -2px;
   margin-top: -2px;
-}
-
-.nav-option, #dropbtn{  
-  display: inline-block;
-  text-align: center;
-  padding: 4px;
 }
 
 .dropdown{
@@ -382,6 +376,10 @@ footer img{
 }
 
 @media only screen and (max-width : 600px), screen and (max-device-width : 600px) {
+  body{
+    background-size: 100% 100%;
+  }
+
   header{
     position: static;
   }
@@ -416,7 +414,7 @@ footer img{
     transform: translateX(-270px);
   }
   
-  a, #code{
+  .nav-option, #code{
     display: block;
     text-align: center;
     border-bottom: 1px solid #333B44;
@@ -428,7 +426,7 @@ footer img{
     display: none;
   }
 
-  .dropdown-content a{
+  .dropdown-content .nav-option{
     display: none;
   }
 
@@ -449,33 +447,4 @@ footer img{
     position: inherit;
     align-self: center;
   }
-}
-
-.ip-loader {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  opacity: 0;
-  cursor: default;
-  pointer-events: none;
-  z-index: 1500;
-}
-
-.ip-loader {
-  bottom: 20%;
-}
-
-.ip-loader svg path {
-  fill: none;
-  stroke-width: 6;
-}
-
-.ip-loader svg path.ip-loader-circlebg {
-  stroke: #ddd;
-}
-
-.ip-loader svg path.ip-loader-circle {
-  -webkit-transition: stroke-dashoffset 0.2s;
-  transition: stroke-dashoffset 0.2s;
-  stroke: #ef6e7e;
 }
