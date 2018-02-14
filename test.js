@@ -5,6 +5,10 @@ $(function(){
 
 		$burger.on('click', function(){
 			$('body').toggleClass('site-push');
+			$('.bg-parallax, #box1, #box2, #box3, #box4, footer').click(function(){
+				$('body').removeClass('site-push');
+				$burger.removeClass('change');
+			})
 		})
 
 

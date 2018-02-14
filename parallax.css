@@ -360,11 +360,17 @@ footer{
   text-align: justify;
 }
 
-@media only screen and (max-width : 600px), screen and (max-device-width : 600px) {
-  body{
-    transform: scale(1);
+@media (max-width: 1500px) {
+  #box3 form{
+    /*width: 90%;*/
   }
 
+  input, textarea {
+    /*width: 90%;*/
+  }
+}
+
+@media only screen and (max-width : 600px), screen and (max-device-width : 600px) {
   header{
     position: static;
   }
@@ -405,12 +411,6 @@ footer{
     border-bottom: 1px solid #333B44;
     margin: 0;
     padding: 10px 0;
-  }
-
-  a:hover {
-    border-top: 2px solid #e74c3c;
-    margin-bottom: 0px;
-    margin-top: -2px;
   }
 
   .dropdown{
