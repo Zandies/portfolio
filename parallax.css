@@ -94,7 +94,7 @@ nav{
   font-size: 17px;
 }
 
-a{
+.nav-option, .subnav-option{
   margin: 0 30px;
   color: #fff;
   text-decoration: none;
@@ -104,31 +104,31 @@ a{
   display: none;
 }
 
-a:first-child:hover {
+.nav-option:first-child:hover {
   border-top: 2px solid #e74c3c;
   margin-bottom: -2px;
   margin-top: -2px;
 }
 
-a:nth-child(2):hover {
+.nav-option:nth-child(2):hover {
   border-top: 2px solid #e67e22;
   margin-bottom: -2px;
   margin-top: -2px;
 }
 
-a#dropbtn:hover, #code:hover{
+.nav-option#dropbtn:hover, #code:hover{
   border-top: 2px solid #f1c40f;
   margin-bottom: -2px;
   margin-top: -2px;
 }
 
-a:last-child:hover {
+.nav-option:last-child:hover {
   border-top: 2px solid #8e44ad;
   margin-bottom: -2px;
   margin-top: -2px;
 }
 
-a, #dropbtn{  
+.nav-option, #dropbtn{  
   display: inline-block;
   text-align: center;
   padding: 4px;
@@ -149,7 +149,7 @@ a, #dropbtn{
   margin: 0;
 }
 
-.dropdown-content a{
+.dropdown-content .subnav-option{
   display: block;
   padding: 5px;
   text-align: left;
@@ -160,7 +160,7 @@ a, #dropbtn{
   display: block;
 }
 
-.dropdown-content a:hover{
+.dropdown-content .subnav-option:hover{
   background-color: #777;
   margin-bottom: 0;
   margin-top: 0;
@@ -352,13 +352,22 @@ input:focus, textarea:focus{
 }
 
 footer{
+  display: flex;
   position:relative;
   color:#ddd;
   background-color:#282E34;
-  text-align:center;
   padding:50px 80px;
-  text-align: justify;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
+footer img{
+  width: 25px;
+  margin: 25px 20px -15px 20px;
+  filter: grayscale(100%);
+}
+
 
 @media (max-width: 1500px) {
   #box3 form{
@@ -410,7 +419,7 @@ footer{
     text-align: center;
     border-bottom: 1px solid #333B44;
     margin: 0;
-    padding: 10px 0;
+    padding: 20px 0;
   }
 
   .dropdown{
