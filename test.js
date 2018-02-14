@@ -1,5 +1,12 @@
 $(function(){
 		$HelloWorld = $("#caption p");
+		$burger = $('.burger');
+		$nav = $('nav');
+
+		$burger.on('click', function(){
+			$('body').toggleClass('site-push');
+		})
+
 
 		if ($(document).ready()){
 			$HelloWorld.addClass('animé zoom');
@@ -48,5 +55,5 @@ $(function(){
 function burger(x) {
 	var nav = document.querySelector('nav')
     x.classList.toggle("change");
-    nav.style.transform = "translateX(0)"
+    // nav.style.transform = "translateX(0)"
 }

@@ -17,14 +17,6 @@
     --green-dark: #23b32a;
 }
 
-@keyframes spin {
-    from{
-        transform: rotate(0deg);
-    }to{
-        transform: rotate(360deg);
-    }
-}
-
 *{
   margin: 0;
   padding: 0;
@@ -32,6 +24,7 @@
 
 html{
   height: 100%;
+  overflow-x: hidden;
 }
 
 
@@ -55,24 +48,6 @@ body{
   left:0;
   top:0;
  }
-
-.spinner{
-    width: 80px;
-    height: 80px;
-    
-    border: 2px solid #f3f3f3;
-    border-top:3px solid #f25a41;
-    border-radius: 100%;
-    
-    position: absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right: 0;
-    margin: auto;
-    
-    animation: spin 1s infinite linear;
-}
 
 header{
   display: flex;
@@ -395,10 +370,21 @@ footer{
   }
 }
 
-@media only screen and (max-width : 568px) {
+@media only screen and (max-width : 600px), screen and (max-device-width : 600px) {
   header{
     position: static;
   }
+  
+  .site-push nav{
+    transform: translateX(0);
+    transition: all .2s ease; 
+  }
+
+  .site-push .burger{
+    transform: translateX(270px);
+    transition: all .2s ease; 
+  }
+
   .burger{
     display: inline-block;
     top: 5px;
@@ -415,6 +401,7 @@ footer{
     width: 250px;
     background-color: #1E2328;
     z-index: 9999;
+    height: 100%;
     transform: translateX(-270px);
   }
   
@@ -436,7 +423,6 @@ footer{
 
   .fixed-nav{
     position: fixed;
-    top: 0px;
   }
 
   #caption p{
