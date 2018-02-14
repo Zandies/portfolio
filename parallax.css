@@ -110,7 +110,7 @@ header{
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
-.nav{
+nav{
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -125,7 +125,35 @@ a{
   text-decoration: none;
 }
 
-a .dropbtn{  
+#code{
+  display: none;
+}
+
+a:first-child:hover {
+  border-top: 2px solid #e74c3c;
+  margin-bottom: -2px;
+  margin-top: -2px;
+}
+
+a:nth-child(2):hover {
+  border-top: 2px solid #e67e22;
+  margin-bottom: -2px;
+  margin-top: -2px;
+}
+
+a#dropbtn:hover, #code:hover{
+  border-top: 2px solid #f1c40f;
+  margin-bottom: -2px;
+  margin-top: -2px;
+}
+
+a:last-child:hover {
+  border-top: 2px solid #8e44ad;
+  margin-bottom: -2px;
+  margin-top: -2px;
+}
+
+a, #dropbtn{  
   display: inline-block;
   text-align: center;
   padding: 4px;
@@ -159,31 +187,9 @@ a .dropbtn{
 
 .dropdown-content a:hover{
   background-color: #777;
-}
-
-
-a:first-child:hover {
-  border-top: 2px solid #e74c3c;
-  margin-bottom: -2px;
-  margin-top: -2px;
-}
-
-a:nth-child(2):hover {
-  border-top: 2px solid #e67e22;
-  margin-bottom: -2px;
-  margin-top: -2px;
-}
-
-a.dropbtn:hover{
-  border-top: 2px solid #f1c40f;
-  margin-bottom: -2px;
-  margin-top: -2px;
-}
-
-a:last-child:hover {
-  border-top: 2px solid #8e44ad;
-  margin-bottom: -2px;
-  margin-top: -2px;
+  margin-bottom: 0;
+  margin-top: 0;
+  border-top: 0px;
 }
 
 .bg-parallax {
@@ -400,24 +406,37 @@ footer{
     z-index: 110;
   }
 
-  .nav{
+  nav{
     position: absolute;
+    padding: 10px;
     top: 0;
     left: 0;
     bottom: 0;
     width: 250px;
     background-color: #1E2328;
     z-index: 9999;
+    transform: translateX(-270px);
   }
   
-  .nav li a{
-    /*display: block;*/
-    float: left;
-    /*height: 40px;*/
+  a, #code{
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #333B44;
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  .dropdown{
+    display: none;
   }
 
   .dropdown-content a{
     display: none;
+  }
+
+  .fixed-nav{
+    position: fixed;
+    top: 0px;
   }
 
   #caption p{

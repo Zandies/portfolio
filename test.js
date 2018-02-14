@@ -1,6 +1,6 @@
 $(function(){
 		$HelloWorld = $("#caption p");
-		
+
 		if ($(document).ready()){
 			$HelloWorld.addClass('animé zoom');
 		}
@@ -28,13 +28,17 @@ $(function(){
 		return supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop;
 	};
 
-	var element = document.querySelector('header')
-	var top = element.getBoundingClientRect().top + scrollY()
+	var header = document.querySelector('header')
+	var nav = document.querySelector('nav')
+
+	var top = header.getBoundingClientRect().top + scrollY()
 	var onScroll = function () {
 		if (scrollY() > top) {
-			element.classList.add('fixed')
+			header.classList.add('fixed');
+			nav.classList.add('fixed-nav');
 		}else{
-			element.classList.remove('fixed')
+			header.classList.remove('fixed');
+			nav.classList.remove('fixed-nav');
 		}
 	};
 	window.addEventListener('scroll', onScroll);
@@ -42,5 +46,7 @@ $(function(){
 })()
 
 function burger(x) {
+	var nav = document.querySelector('nav')
     x.classList.toggle("change");
+    nav.style.transform = "translateX(0)"
 }
