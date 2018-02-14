@@ -5,14 +5,13 @@
     <script src="jquery.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
     <script type="text/javascript">
-    var loader = document.getElementById('loader');
     window.addEventListener('load', function(){
       document.getElementById('loader').style.display = 'none';
     });
     </script>
     <link rel="stylesheet" type="text/css" href="parallax.css" />
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
-    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" href="animations.css">
     <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
     <link rel="icon" href="favicon.ico" />
     <title>Test Parallax</title>
@@ -21,11 +20,14 @@
   <div id="loader">
   </div>
   <header>
-    <div class="burger" onclick="myFunction(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
+    <div class="burger" onclick="burger(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    <div id="burger-menu">
+      <p>Hello</p>
+    </div>
     <ul class="nav">
       <li><a href="#">Accueil</a></li>
       <li><a href="#">Jeu de Rôle</a></li>
@@ -56,25 +58,25 @@
     <div>
       <button>
         <div class="layer gryffondor-layer"><img class="house" src="Gryffondor_Logo.png"></div>
-        <!-- Gryffondor -->...
+        <!-- Gryffondor -->
       </button>
     </div>
     <div>
       <button>
         <div class="layer slytherin-layer"><img class="house" src="Slytherin_Logo.png"></div>
-        <!-- Serpentard -->...
+        <!-- Serpentard -->
       </button>
     </div>
     <div>
       <button>
         <div class="layer hufflepuff-layer"><img class="house" src="Hufflepuff_Logo.png"></div>
-        <!-- Poufsouffle -->...
+        <!-- Poufsouffle -->
       </button>
     </div>
     <div>
       <button>
         <div class="layer ravenclaw-layer"><img class="house" src="Ravenclaw_Logo.png"></div>
-        <!-- Serdaigle -->...
+        <!-- Serdaigle -->
       </button>
     </div>
   </div>
