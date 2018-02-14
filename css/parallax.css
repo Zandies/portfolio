@@ -41,14 +41,15 @@ body{
 }
 
 #loader{
-  height:100%;
-  width:100%;
-  background:rgba(0, 0, 0, 1);
-  background-image: url('ajax-loader.gif');
-  position:fixed;
-  left:0;
-  top:0;
- }
+  background: url('ajax-loader.gif') 50% 50% no-repeat rgba(255, 255, 255, 0.8);
+  cursor: wait;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
 
 header{
   display: flex;
