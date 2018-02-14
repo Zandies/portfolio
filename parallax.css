@@ -326,7 +326,7 @@ input:focus, textarea:focus{
   flex-direction: row;
   cursor: default;
   background-color: #ecf0f1;
-  width: 100%;
+  /*width: 100%;*/
   justify-content: center;
   align-items: center;
   padding-top: 30px;
@@ -427,6 +427,15 @@ footer{
 
   #caption p{
     display: none;
+  }
+
+  #box4{
+    flex-direction: column;
+  }
+
+  #box4 h2{
+    position: inherit;
+    align-self: center;
   }
 }
 
