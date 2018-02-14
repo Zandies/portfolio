@@ -407,6 +407,12 @@ footer{
     padding: 10px 0;
   }
 
+  a:hover {
+    border-top: 2px solid #e74c3c;
+    margin-bottom: 0px;
+    margin-top: -2px;
+  }
+
   .dropdown{
     display: none;
   }
