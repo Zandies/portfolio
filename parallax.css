@@ -44,6 +44,7 @@ body{
   height:100%;
   width:100%;
   background:rgba(0, 0, 0, 1);
+  background-image: url('ajax-loader.gif');
   position:fixed;
   left:0;
   top:0;
@@ -449,3 +450,31 @@ footer img{
   }
 }
 
+.ip-loader {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  cursor: default;
+  pointer-events: none;
+  z-index: 1500;
+}
+
+.ip-loader {
+  bottom: 20%;
+}
+
+.ip-loader svg path {
+  fill: none;
+  stroke-width: 6;
+}
+
+.ip-loader svg path.ip-loader-circlebg {
+  stroke: #ddd;
+}
+
+.ip-loader svg path.ip-loader-circle {
+  -webkit-transition: stroke-dashoffset 0.2s;
+  transition: stroke-dashoffset 0.2s;
+  stroke: #ef6e7e;
+}
