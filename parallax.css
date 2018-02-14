@@ -17,6 +17,14 @@
     --green-dark: #23b32a;
 }
 
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -25,6 +33,7 @@
 html{
   height: 100%;
 }
+
 
 body{
   font-family: "Lato";
@@ -63,14 +72,6 @@ body{
     margin: auto;
     
     animation: spin 1s infinite linear;
-}
-
-@keyframes spin {
-    from{
-        transform: rotate(0deg);
-    }to{
-        transform: rotate(360deg);
-    }
 }
 
 header{
@@ -114,19 +115,20 @@ header{
   margin: 0;
   padding: 0;
   overflow: hidden;
-}
-
-li{
-  float: left;
   padding: 15px;
+  font-size: 17px;
 }
 
-li a, .dropbtn{  
+a{
+  margin: 0 30px;
+  color: #fff;
+  text-decoration: none;
+}
+
+a .dropbtn{  
   display: inline-block;
   text-align: center;
   padding: 4px;
-  color: #fff;
-  text-decoration: none;
 }
 
 .dropdown{
@@ -136,16 +138,19 @@ li a, .dropbtn{
 .dropdown-content{
   display: none;
   position: absolute;
-  min-width: 160px;
+  width: 160px;
   z-index: 9;
+  padding-left: 0;
   background-color: #282E34;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  margin: 0;
 }
 
 .dropdown-content a{
   display: block;
   padding: 5px;
   text-align: left;
+  margin: 0;
 }
 
 .dropdown:hover .dropdown-content{
@@ -156,20 +161,14 @@ li a, .dropbtn{
   background-color: #777;
 }
 
-.fa-sign-out-alt{
-  top: 30%;
-  right: 5%;
-  position: absolute;
-  color: #e74c3c;
-}
 
-li:first-child:hover a{
+a:first-child:hover {
   border-top: 2px solid #e74c3c;
   margin-bottom: -2px;
   margin-top: -2px;
 }
 
-li:nth-child(2):hover a{
+a:nth-child(2):hover {
   border-top: 2px solid #e67e22;
   margin-bottom: -2px;
   margin-top: -2px;
@@ -181,7 +180,7 @@ a.dropbtn:hover{
   margin-top: -2px;
 }
 
-li:last-child:hover a{
+a:last-child:hover {
   border-top: 2px solid #8e44ad;
   margin-bottom: -2px;
   margin-top: -2px;
@@ -364,6 +363,13 @@ input:focus, textarea:focus{
   width: 150px;
 }
 
+.fixed{
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+  width: 100%;
+}
+
 footer{
   position:relative;
   color:#ddd;
@@ -383,30 +389,39 @@ footer{
   }
 }
 
-@media screen and (max-width : 568px) {
+@media only screen and (max-width : 568px) {
+  header{
+    position: static;
+  }
   .burger{
     display: inline-block;
     top: 5px;
     left: 5px;
     z-index: 110;
   }
+
   .nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    background-color: #1E2328;
+    z-index: 9999;
+  }
+  
+  .nav li a{
+    /*display: block;*/
+    float: left;
+    /*height: 40px;*/
+  }
+
+  .dropdown-content a{
     display: none;
   }
-  header{
-    height: 62px;
-  }
+
   #caption p{
     display: none;
   }
-  #caption p::after{
-    content: 'Hi !';
-  }
 }
 
-.fixed{
-  position: fixed;
-  top: 0px;
-  z-index: 100;
-  width: 100%;
-}
