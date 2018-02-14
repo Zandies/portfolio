@@ -430,6 +430,7 @@ footer{
   }
 
   #box4{
+    -webkit-flex-direction: column;
     flex-direction: column;
   }
 
