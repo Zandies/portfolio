@@ -94,9 +94,10 @@
     position: inherit;
     align-self: center;
   }
+
   footer{
-    width: 100%;
-    padding-left: 0%;
+    margin: 0;
+    padding: 15px 0;
     font-size: 12px;
   }
 }
