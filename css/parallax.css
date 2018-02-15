@@ -106,6 +106,10 @@ nav{
   display: none;
 }
 
+.subnav-option-burger{
+  display: none;
+}
+
 .nav-option:first-child:hover {
   border-top: 2px solid #e74c3c;
   margin-bottom: -2px;
@@ -364,6 +368,11 @@ footer img{
   filter: grayscale(100%);
 }
 
+footer img:hover{
+  filter: grayscale(0%);
+  transition: all .5s ease;
+}
+
 
 @media (max-width: 1500px) {
   #box3 form{
@@ -372,79 +381,5 @@ footer img{
 
   input, textarea {
     /*width: 90%;*/
-  }
-}
-
-@media only screen and (max-width : 600px), screen and (max-device-width : 600px) {
-  body{
-    background-size: 100% 100%;
-  }
-
-  header{
-    position: static;
-  }
-  
-  .site-push nav{
-    transform: translateX(0);
-    transition: all .2s ease; 
-  }
-
-  .site-push .burger{
-    transform: translateX(270px);
-    transition: all .2s ease; 
-  }
-
-  .burger{
-    display: inline-block;
-    top: 5px;
-    left: 5px;
-    z-index: 110;
-  }
-
-  nav{
-    position: absolute;
-    padding: 10px;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 250px;
-    background-color: #1E2328;
-    z-index: 9999;
-    height: 100%;
-    transform: translateX(-270px);
-  }
-  
-  .nav-option, #code{
-    display: block;
-    text-align: center;
-    border-bottom: 1px solid #333B44;
-    margin: 0;
-    padding: 20px 0;
-  }
-
-  .dropdown{
-    display: none;
-  }
-
-  .dropdown-content .nav-option{
-    display: none;
-  }
-
-  .fixed-nav{
-    position: fixed;
-  }
-
-  #caption p{
-    display: none;
-  }
-
-  #box4{
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
-
-  #box4 h2{
-    position: inherit;
-    align-self: center;
   }
 }

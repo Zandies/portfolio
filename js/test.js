@@ -11,6 +11,10 @@ $(function(){
 			})
 		})
 
+		$('#code').on('click', function(){
+			$('.subnav-option-burger').toggleClass('subnav-option-burger-visible');
+		});
+
 
 		if ($(document).ready()){
 			$HelloWorld.addClass('animé zoom');
