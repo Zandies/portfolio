@@ -1,8 +1,5 @@
 
 @media only screen and (max-width : 600px), screen and (max-device-width : 600px) {
-  body{
-    background-size: 100% 100%;
-  }
 
   header{
     position: static;
@@ -84,6 +81,10 @@
     display: none;
   }
 
+  #responsive{
+    display: inline-block;
+  }
+
   #box4{
     -webkit-flex-direction: column;
     flex-direction: column;
@@ -93,4 +94,12 @@
     position: inherit;
     align-self: center;
   }
+  footer{
+    width: 100%;
+    padding-left: 0%;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width : 350px), screen and (max-device-width : 350px) {
 }
