@@ -5,6 +5,7 @@ body{
 article{
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	flex-direction: column;
 }
 
@@ -12,13 +13,13 @@ div.banner-article{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 250px;
+	height: 300px;
 	width: 100%;
 	background-color: #e74c3c;
 	flex-grow: 1;
 }
 
-.banner-article #title{
+.banner-article #banner-title{
 	font-size: 50px;
 	font-weight: bold;
 	color: #fff;
@@ -27,8 +28,45 @@ div.banner-article{
 	text-shadow: -4px 4px #c0392b;
 }
 
-.content-article h2{
-	margin-top: 15px;
+.info-article{
+	position: absolute;
+}
+
+.content-article{
+	display: flex;
+	width: 50%;
+	flex-direction: column;
+	margin-bottom: 25px;
+	padding: 15px;
+}
+
+.content-article h3{
+	margin: 25px 0;
 	text-align: center;
 	color: #2c3e50;
 }
+
+.content-article p{
+	line-height: 25px;
+	font-size: 17px;
+}
+
+#hufflepuff{
+	height: 25px;
+}
+
+#signature{
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 15px;
+}
+
+#signature:before{
+	content: "- ";
+}
+
+footer{
+	/*height: 50px;*/
+	padding: 15px 0px;
+}
+
