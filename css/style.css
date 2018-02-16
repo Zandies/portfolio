@@ -33,11 +33,6 @@ body{
   height: 100%;
   margin: 0;
   color: #777;
-  background-image: url("../img/img2.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 #loader{
@@ -175,7 +170,7 @@ nav{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("img2.jpg");
+  background-image: url("../img/img2.jpg");
   min-height: 100%;
 }
 
@@ -362,8 +357,6 @@ footer{
   color:#ddd;
   background-color:#282E34;
   padding:50px 80px;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
 
