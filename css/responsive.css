@@ -100,6 +100,23 @@
     padding: 15px 0;
     font-size: 12px;
   }
+  
+  .info-article{
+    order: 2;
+    align-self: center;
+    margin-top: -25px;
+    margin-bottom: 50px;
+  }
+
+  .banner-article #banner-title{
+    font-size: 35px;
+  }
+  
+  .content-article{
+    margin-top: 0;
+    width: 70%; 
+  }
+
 }
 
 @media only screen and (max-width : 350px), screen and (max-device-width : 350px) {
