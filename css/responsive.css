@@ -117,7 +117,18 @@
     margin-top: 0;
     width: 70%; 
   }
+  #add-comment{
+    display: none;
+  }
 
+  #add-comment-responsive{
+    display: initial;
+    margin: 0px 0 20px 0;
+    font-size: 50px;
+    padding: 15px 35px;
+    background-color: #2ecc71;
+    transition: background-color .2s ease;
+  }
 }
 
 @media only screen and (max-width : 885px), screen and (max-device-width : 885px) {

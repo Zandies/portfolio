@@ -1,5 +1,26 @@
+@keyframes shake{
+	0%, to{
+		transform:translateZ(0)
+		}
+	10%,30%,50%,70%,90%{
+		transform:translate3d(-10px,0,0)
+		}
+	20%,40%,60%,80%{
+		transform:translate3d(10px,0,0)
+	}
+}
+
+@keyframes disparition{
+	0%{ opacity: 1; }
+	20%{ opacity: .8; }
+	40%{ opacity: .6; }
+	60%{ opacity: .4; }
+	80%{ opacity: .2; }
+	100%{ display:none; opacity: 0; }
+}
+
 body{
-	background-color: #f1f2f6;
+	background-color: #D9DFE3;
 	font-family: 'Lato';
 }
 
@@ -127,6 +148,7 @@ section{
 	background-color: #fff;
 	box-shadow: 3px 3px #00000012;
 	transition: box-shadow .2s ease;
+	font-size: 14px;
 }
 
 .commentaires:hover{
@@ -159,18 +181,42 @@ section{
 	margin: 0 5px;
 }
 
-.add-comment{
-	display: flex;
-	flex-direction: column;
-	width: 90%;
-	margin: 20px;
-	background-color: #fff;
-	align-items: center;
-	justify-content: center;
-	box-shadow: 3px 3px #00000012;
+#add-comment{
+	margin: 0px 0 20px 0;
+	background-color: #2ecc71;
+	transition: background-color .2s ease;
 }
 
-form{
+#add-comment-responsive{
+	display: none;
+}
+
+#add-comment:hover{
+	background-color: #27ae60;
+}
+
+.apparition{
+	display: flex;
+}
+
+#tips-alert{
+	display: none;
+	position: fixed;
+	right: 0;
+	top: 70px;
+	margin: 5px;
+	padding: 15px 10px 15px 20px;
+	color: #fff;
+	border: 2px solid #c0392b;
+	background-color: #e74c3c;
+	animation: shake 1.5s 1 0s, disparition .1s forwards 15s;
+}
+
+#se_connecter{
+	color: #fff;
+}
+
+/*form{
 	width: 100%;
 }
 
@@ -198,11 +244,10 @@ textarea{
 input:focus, textarea:focus{
   border-bottom: 3px solid #3498db;
 }
-
+*/
 .scroll{
 	top: 250px;
 }
-
 
 footer{
 	display: flex;
