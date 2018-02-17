@@ -1,5 +1,12 @@
 body{
-	background-color: #F3f3f3;
+	background-color: #f1f2f6;
+}
+
+#allArticle{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 article{
@@ -8,8 +15,9 @@ article{
 	align-items: center;
 	flex-direction: column;
 	flex-wrap: wrap;
-	background-color: #fff;
 	margin: 15px 50px;
+	background-color: #fff;
+	padding-bottom: 25px;
 }
 
 div.banner-article{
@@ -29,6 +37,16 @@ div.banner-article{
 	align-self: center;
 	justify-content: center;
 	text-shadow: -4px 4px #c0392b;
+}
+
+section{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	/*margin: 15px 50px;*/
+	width: 90%;
 }
 
 .info-article{
@@ -53,7 +71,7 @@ div.banner-article{
 	width: 80%;
 	flex-direction: column;
 	margin-bottom: 25px;
-	padding: 15px;
+	padding: 0px;
 }
 
 .content-article h3{
@@ -67,7 +85,7 @@ div.banner-article{
 	font-size: 17px;
 }
 
-i{
+#img-article{
 	align-self: center;
 	text-align: center;
 }
@@ -86,27 +104,61 @@ i{
 	content: "- ";
 }
 
-#comments{
-	display: flex;
-	width: 80%;
-	flex-direction: column;
-	border: 1px solid black;
-	margin: 15px;
-}
-
 #title-comment{
 	font-size: 25px;
 	font-weight: bold;
 	align-self: flex-start;
-	margin-bottom: 15px;
+	margin: 15px 15px 15px -50px;
 	color: #000;
 }
 
-#comment1{
+#comments{
+	display: flex;
+	width: 80%;
+	flex-direction: column;
+	margin: 15px;
+	color: #000;
+}
+
+.commentaires{
+	margin: 5px -55px;
+	padding: 15px;
 	background-color: #fff;
 }
 
+.commentaires:nth-child(even){
+	border-left: 5px solid #e74c3c;
+}
+
+.commentaires:nth-child(odd){
+	border-left: 5px solid #c0392b;
+}
+
+.name-comment{
+	margin-bottom: 15px;
+}
+
+.date-comment{
+	font-style: none;
+	color: #777;
+}
+
+.add-comment{
+	display: flex;
+	flex-direction: column;
+	border: 1px solid black;
+	width: 90%;
+	margin: 15px;
+}
+
+.scroll{
+	top: 250px;
+}
+
+
 footer{
-	padding: 25px 0px;
+	display: flex;
+	padding: 15px;
+	justify-content: center;
 }
 

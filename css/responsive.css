@@ -102,10 +102,10 @@
   }
   
   .info-article{
+    position: relative;
     order: 2;
     align-self: center;
-    margin-top: -25px;
-    margin-bottom: 50px;
+    top: 0;
   }
 
   .banner-article #banner-title{

@@ -45,15 +45,18 @@ $(function(){
 
 	var header = document.querySelector('header')
 	var nav = document.querySelector('nav')
+	var infoArticle = document.querySelector('aside')
 
 	var top = header.getBoundingClientRect().top + scrollY()
 	var onScroll = function () {
 		if (scrollY() > top) {
 			header.classList.add('fixed');
 			nav.classList.add('fixed-nav');
+			infoArticle.classList.add('scroll');
 		}else{
 			header.classList.remove('fixed');
 			nav.classList.remove('fixed-nav');
+			infoArticle.classList.remove('scroll');
 		}
 	};
 	window.addEventListener('scroll', onScroll);
