@@ -106,6 +106,7 @@
     order: 2;
     align-self: center;
     top: 0;
+    left: 0;
   }
 
   .banner-article #banner-title{
@@ -119,5 +120,8 @@
 
 }
 
-@media only screen and (max-width : 350px), screen and (max-device-width : 350px) {
+@media only screen and (max-width : 885px), screen and (max-device-width : 885px) {
+  .info-article{
+    left: 10px;
+  }
 }
