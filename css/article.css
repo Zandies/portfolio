@@ -1,5 +1,6 @@
 body{
 	background-color: #f1f2f6;
+	font-family: 'Lato';
 }
 
 #allArticle{
@@ -161,14 +162,17 @@ section{
 .add-comment{
 	display: flex;
 	flex-direction: column;
-	border: 1px solid black;
 	width: 90%;
-	margin: 15px;
+	margin: 20px;
 	background-color: #fff;
 	align-items: center;
 	justify-content: center;
+	box-shadow: 3px 3px #00000012;
 }
 
+form{
+	width: 100%;
+}
 
 input{
   margin: 15px;
@@ -176,9 +180,11 @@ input{
   border-style: none;
   background-color: initial;
   width: 30%;
+  box-shadow: 3px 3px #00000020;
 }
 
 textarea{
+	align-self: center;
   margin: -5px 0 10px 0;
   padding: 14px;
   font-size: 15px;
@@ -186,6 +192,7 @@ textarea{
   width: 50%;
   border-style: none;
   background-color: initial;
+  box-shadow: 3px 3px #00000020;
 }
 
 input:focus, textarea:focus{
