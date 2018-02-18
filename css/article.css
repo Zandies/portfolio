@@ -2,10 +2,10 @@
 	0%, to{
 		transform:translateZ(0)
 		}
-	10%,30%,50%,70%,90%{
+	66%{
 		transform:translate3d(-10px,0,0)
 		}
-	20%,40%,60%,80%{
+	33%{
 		transform:translate3d(10px,0,0)
 	}
 }
@@ -23,6 +23,10 @@ body{
 	background-color: #D9DFE3;
 	font-family: 'Lato';
 }
+
+/* *******************************************************
+	ARTICLE	
+******************************************************* */
 
 #allArticle{
 	display: flex;
@@ -42,6 +46,10 @@ article{
 	padding-bottom: 25px;
 }
 
+/* *******************************************************
+	BANNIERE	
+******************************************************* */
+
 div.banner-article{
 	display: flex;
 	justify-content: center;
@@ -60,6 +68,10 @@ div.banner-article{
 	justify-content: center;
 	text-shadow: -4px 4px #c0392b;
 }
+
+/* *******************************************************
+	CONTENU DE L'ARTICLE (texte et auteur)
+******************************************************* */
 
 section{
 	display: flex;
@@ -126,6 +138,10 @@ section{
 	content: "- ";
 }
 
+/* *******************************************************
+	COMMENTAIRE
+******************************************************* */
+
 #title-comment{
 	font-size: 25px;
 	font-weight: bold;
@@ -181,17 +197,21 @@ section{
 	margin: 0 5px;
 }
 
-#add-comment{
+/********************************************
+	AJOUT COMMENTAIRES
+********************************************/
+
+#add-comment-button{
 	margin: 0px 0 20px 0;
 	background-color: #2ecc71;
 	transition: background-color .2s ease;
 }
 
-#add-comment-responsive{
+#add-comment-button-responsive{
 	display: none;
 }
 
-#add-comment:hover{
+#add-comment-button:hover{
 	background-color: #27ae60;
 }
 
@@ -209,7 +229,7 @@ section{
 	color: #fff;
 	border: 2px solid #c0392b;
 	background-color: #e74c3c;
-	animation: shake 1.5s 1 0s, disparition .1s forwards 15s;
+	animation: shake .5s 1 0s, disparition .1s forwards 15s;
 }
 
 #se_connecter{
@@ -245,9 +265,17 @@ input:focus, textarea:focus{
   border-bottom: 3px solid #3498db;
 }
 */
+/*******************************
+	DIVERS
+*******************************/
+
 .scroll{
 	top: 250px;
 }
+
+/**********************************
+	FOOTER
+**********************************/
 
 footer{
 	display: flex;

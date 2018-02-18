@@ -1,5 +1,5 @@
 $(function() {
-	$button_add_comment = $('#add-comment, #add-comment-responsive');
+	$button_add_comment = $('#add-comment-button, #add-comment-button-responsive');
 
 	$button_add_comment.click(function() {
 		$tips_connect = $('#tips-alert');
