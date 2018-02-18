@@ -117,11 +117,11 @@
     margin-top: 0;
     width: 70%; 
   }
-  #add-comment{
+  #add-comment-button{
     display: none;
   }
 
-  #add-comment-responsive{
+  #add-comment-button-responsive{
     display: initial;
     margin: 0px 0 20px 0;
     font-size: 50px;

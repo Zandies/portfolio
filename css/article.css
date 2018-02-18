@@ -139,7 +139,7 @@ section{
 }
 
 /* *******************************************************
-	COMMENTAIRE
+	COMMENTAIRES
 ******************************************************* */
 
 #title-comment{
@@ -159,7 +159,7 @@ section{
 }
 
 .commentaires{
-	margin: 5px -55px;
+	margin: 5px 0px;
 	padding: 15px 0px 25px 10px;
 	background-color: #fff;
 	box-shadow: 3px 3px #00000012;
@@ -195,6 +195,11 @@ section{
 	font-style: none;
 	color: #777;
 	margin: 0 5px;
+}
+
+.text-comment{
+	margin-left: 15px;
+	font-size: 14px;
 }
 
 /********************************************

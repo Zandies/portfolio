@@ -323,7 +323,7 @@ input:focus, textarea:focus{
 
 #box4{
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   cursor: default;
   background-color: #ecf0f1;
   /*width: 100%;*/
